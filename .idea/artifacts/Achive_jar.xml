@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Achive:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Achive_jar</output-path>
+    <root id="archive" name="Achive.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
