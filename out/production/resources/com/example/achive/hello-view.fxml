@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.achive.HelloController">
+   <children>
+      <Text fx:id="none_pac_text" layoutX="218.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите папку для работы" wrappingWidth="490.6044921875">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="today_layer" layoutX="125.0" layoutY="79.0" prefHeight="521.0" prefWidth="676.0" style="-fx-background-color: lightgray;" visible="false">
+         <children>
+            <VBox fx:id="tasks_box" layoutY="60.0" prefHeight="405.0" prefWidth="676.0" style="-fx-border-color: black;" />
+            <Button fx:id="add_task" layoutX="11.0" layoutY="465.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="654.0" style="-fx-background-color: darkgreen;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/plus-xxl-2803538445.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="57.0" prefWidth="676.0" style="-fx-border-color: black; -fx-background-color: gray;">
+               <children>
+                  <Text layoutX="258.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сегодня">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="350.0" layoutY="-65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заработано баллов: " wrappingWidth="160.72509765625" x="100.0" y="100.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="earned_exp" layoutX="611.0" layoutY="-64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" y="100.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="79.0" prefHeight="521.0" prefWidth="125.0" style="-fx-background-color: gray;">
+         <children>
+            <Button fx:id="today_task_button" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Сегодня" />
+            <Button fx:id="done_task_button" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Выполненные" />
+            <ToggleButton fx:id="other_pac_button" layoutY="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Другие папки" />
+            <VBox fx:id="addit_pac_box" layoutY="90.0" prefHeight="431.0" prefWidth="125.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Button fx:id="new_pac_btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Создать папку" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: darkgreen;">
+         <children>
+            <Text layoutX="337.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Achive" textAlignment="CENTER">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Text>
+            <Button fx:id="cittat_button" layoutX="22.0" layoutY="23.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Показать цитату" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="done_layer" layoutX="124.0" layoutY="79.0" prefHeight="521.0" prefWidth="676.0" style="-fx-background-color: lightgray;" visible="false">
+         <children>
+            <VBox fx:id="done_box" layoutY="60.0" prefHeight="461.0" prefWidth="676.0" style="-fx-border-color: black;" />
+            <AnchorPane prefHeight="57.0" prefWidth="676.0" style="-fx-border-color: black; -fx-background-color: gray;">
+               <children>
+                  <Text layoutX="225.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выполнено">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="clear_all" layoutX="537.0" layoutY="10.0" mnemonicParsing="false" text="Очистить все">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pac_layer_1" layoutX="125.0" layoutY="79.0" prefHeight="521.0" prefWidth="676.0" style="-fx-background-color: lightgray;" visible="false">
+         <children>
+            <VBox fx:id="tasks_box_1" layoutY="60.0" prefHeight="405.0" prefWidth="676.0" style="-fx-border-color: black;" />
+            <Button fx:id="add_task_1" layoutX="11.0" layoutY="465.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="654.0" style="-fx-background-color: darkgreen;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/plus-xxl-2803538445.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="57.0" prefWidth="676.0" style="-fx-border-color: black; -fx-background-color: gray;">
+               <children>
+                  <Text fx:id="label_1" layoutX="258.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
