@@ -299,7 +299,7 @@ void initialize() {
     });
 }
 ```
-![UML диаграмма]([https://github.com/Asolvich/AchiveTODO/blob/main/out/cl1.png](https://github.com/Asolvich/AchiveTODO/blob/main/out/production/resources/cl1.png))
+![UML диаграмма](https://github.com/Asolvich/AchiveTODO/blob/main/out/production/resources/cl1.png)
 ___
 # Паттерн которые не стоило бы применять: Паттерн Заместитель (Proxy) 
 Заместитель предоставляет замену другого объекта для управления доступом к нему. Если в TO-DO приложении нет необходимости в контроле доступа к задачам или спискам, то использование заместителя может быть излишним.
